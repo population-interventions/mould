@@ -1,0 +1,60 @@
+{
+	"data_dir" : "mould_het",
+	"uncertain_dir" : "mould_het/uncertainty",
+	"startYear" : 2021,
+	"endYear" : 2130,
+	"maxAge" : 110,
+	"apcLimit" : 15,
+	"doHet" : ["strata"],
+	"diseaseParams" : {
+		"apcStartYearOverride" : 2019,
+		"apcLimitOverride" : 15
+	},
+	"strataCategories" : {
+		"sex" : ["female", "male"],
+		"strata" : ["SES1", "SES2", "SES3", "SES4", "SES5"]
+	},
+	"writeToModelInput" : "mould",
+	"random_seeds" : [0],
+	"circuit_order" : [],
+	"default" : {
+		"lifetable_rates" : "base_lifetable",
+		"disease_params" : {
+			"type" : {
+				"asthma" : "chronic",
+				"copd" : "chronic",
+				"lrti" : "acute"
+			}
+		}
+	},
+	"scenarios" : {
+		"bau" : {
+			"prevalence" : "base_population_aus"
+		}
+	},
+	"output" : {
+		"pretty" : {
+			"lifetable" : {
+				"out" : {
+					"metrics" : [
+						"HALY",
+						"total_spent",
+						"total_income",
+						"deaths"
+					],
+					"discounts" : [0, -0.02, -0.03, -0.05],
+					"divisor" : {
+						"total_spent" : 1000000,
+						"total_income" : 1000000
+					},
+					"colRename" : {
+						"bau" : "BAU",
+						"int" : "INT"
+					},
+					"yearRanges" : [[0, 10], [0, 20]],
+					"fullPrecision" : true
+				}
+			}
+		}
+	}
+}

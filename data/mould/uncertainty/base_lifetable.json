@@ -1,0 +1,6 @@
+{
+	"colUncertainty" : {
+		"acmr" : {"distType" : "LogNormal", "sd" : 0.05},
+		"disability_rate" : {"distType" : "Beta", "sdFrac" : 0.1}
+	}
+}

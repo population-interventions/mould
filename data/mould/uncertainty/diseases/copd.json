@@ -1,0 +1,50 @@
+{
+    "colUncertainty": {
+        "i": {
+            "distType": "LogNormal",
+            "sdIndexed": true
+        },
+        "prev": {
+            "distType": "Beta",
+            "sdFracIndexed": true
+        },
+        "f": {
+            "distType": "LogNormal",
+            "sdIndexed": true
+        },
+        "r": {
+            "distType": "LogNormal",
+            "sd": 0.1
+        },
+        "expenditure_rate_first": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_expenditure_copd"
+        },
+        "expenditure_rate": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_expenditure_copd"
+        },
+        "expenditure_rate_last": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_expenditure_copd"
+        },
+        "income_first": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_income_copd"
+        },
+        "income": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_income_copd"
+        },
+        "income_last": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_income_copd"
+        }
+    }
+}

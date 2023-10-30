@@ -1,0 +1,36 @@
+{
+    "colUncertainty": {
+        "excess_mortality": {
+            "distType": "LogNormal",
+            "sd": 0.1
+        },
+        "disability_rate": {
+            "distType": "LogNormal",
+            "sd": 0.1
+        },
+        "expenditure_rate": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_expenditure_lrti"
+        },
+        "expenditure_rate_death": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_expenditure_lrti"
+        },
+        "income": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_income_lrti"
+        },
+        "income_death": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_income_lrti"
+        },
+        "incidence": {
+            "distType": "LogNormal",
+            "sdIndexed": true
+        }
+    }
+}

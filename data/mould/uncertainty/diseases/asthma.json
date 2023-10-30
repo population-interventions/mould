@@ -1,0 +1,50 @@
+{
+    "colUncertainty": {
+        "i": {
+            "distType": "LogNormal",
+            "sdIndexed": true
+        },
+        "prev": {
+            "distType": "Beta",
+            "sdFracIndexed": true
+        },
+        "f": {
+            "distType": "LogNormal",
+            "sdIndexed": true
+        },
+        "r": {
+            "distType": "LogNormal",
+            "sd": 0.1
+        },
+        "expenditure_rate_first": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_expenditure_asthma"
+        },
+        "expenditure_rate": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_expenditure_asthma"
+        },
+        "expenditure_rate_last": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_expenditure_asthma"
+        },
+        "income_first": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_income_asthma"
+        },
+        "income": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_income_asthma"
+        },
+        "income_last": {
+            "distType": "Gamma",
+            "sdFrac": 0.1,
+            "correlateKey": "_disease_income_asthma"
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+	"colUncertainty" : {
+		"mild" : {"distType" : "LogNormal", "min" : 1, "sdFrac" : 1.184757141, "correlateKey" : "copd_mild"},
+		"severe" : {"distType" : "LogNormal", "min" : 1, "sdFrac" : 0.448671102, "correlateKey" : "copd_severe"}
+	}
+}

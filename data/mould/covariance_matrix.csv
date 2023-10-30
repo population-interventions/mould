@@ -1,0 +1,7 @@
+,asthma_mild,asthma_severe,copd_mild,copd_severe,lrti_mild,lrti_severe
+asthma_mild,1,0.75,0,0,0,0
+asthma_severe,0.75,1,0,0,0,0
+copd_mild,0,0,1,0.75,0,0
+copd_severe,0,0,0.75,1,0,0
+lrti_mild,0,0,0,0,1,0.75
+lrti_severe,0,0,0,0,0.75,1

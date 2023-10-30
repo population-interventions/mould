@@ -1,0 +1,8 @@
+{
+	"sumCols" : ["nomould", "mild", "severe"],
+	"remainderType" : "vacuum",
+	"sumColUncertainty" : {
+		"mild" : {"distType" : "Normal", "sdIndexed" : true},
+		"severe" : {"distType" : "Normal", "sdIndexed" : true}
+	}
+}

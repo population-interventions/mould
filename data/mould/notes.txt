@@ -1,0 +1,2 @@
+Some notes
+1. Not using covariance matrix for mould model 

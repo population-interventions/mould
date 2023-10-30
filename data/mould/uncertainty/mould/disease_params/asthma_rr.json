@@ -1,0 +1,6 @@
+{
+	"colUncertainty" : {
+		"mild" : {"distType" : "LogNormal", "min" : 1, "sdFrac" : 0.330477919, "correlateKey" : "asthma_mild"},
+		"severe" : {"distType" : "LogNormal", "min" : 1, "sdFrac" : 0.123328528, "correlateKey" : "asthma_severe"}
+	}
+}

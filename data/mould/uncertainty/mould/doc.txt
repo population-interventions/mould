@@ -1,0 +1,3 @@
+The uncertainty of the het file is a fractional LogNormal because this ends up creating fixed ratios in the output circuit. Run with seed index of 1 to verify this.
+
+The fractional uncertainty is set to give 0.287682 a sd of 0.0601 on the log scale. Note that ln(4/3) = 0.287682.
