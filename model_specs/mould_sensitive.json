@@ -7,6 +7,7 @@
 	"endYear" : 2130,
 	"maxAge" : 110,
 	"apcLimit" : 15,
+	"hpc_memPerCpu" : 12000,
 	"useCacheUncert" : true,
 	"covarianceMatrix" : "covariance_matrix",
 	"diseaseParams" : {
