@@ -60,7 +60,7 @@
 		"int" : {
 			"circuit" : {
 				"mould" : {
-					"prevalence" : {"file" : "mould/prevalence", "percentile" : {"mild" : 0.01}},
+					"prevalence" : {"file" : "mould/prevalence", "percentile" : {"mild" : 0.99}},
 					"flowFile" : "mould/flow",
 					"arcs" : [
 						["mild", ["nomould"]],

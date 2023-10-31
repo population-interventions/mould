@@ -1,6 +1,7 @@
 {
 	"sumCols" : ["nomould", "mild", "severe"],
-	"remainderType" : "vacuum", TODO Make remainder cols
+	"remainderCols" : ["nomould"],
+	"remainderType" : "none",
 	"sumColUncertainty" : {
 		"mild" : {"distType" : "Normal", "sdIndexed" : true},
 		"severe" : {"distType" : "Normal", "sdIndexed" : true}
