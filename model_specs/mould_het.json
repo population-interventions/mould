@@ -4,6 +4,7 @@
 	"startYear" : 2021,
 	"endYear" : 2130,
 	"maxAge" : 110,
+	"birthYears" : 40,
 	"apcLimit" : 15,
 	"doHet" : ["strata"],
 	"diseaseParams" : {
@@ -19,6 +20,7 @@
 	"circuit_order" : [],
 	"default" : {
 		"lifetable_rates" : "base_lifetable",
+		"birth_table" : "base_births",
 		"disease_params" : {
 			"type" : {
 				"asthma" : "chronic",

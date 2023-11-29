@@ -5,6 +5,7 @@
 	"hpc_drawZeroFirst" : true,
 	"startYear" : 2021,
 	"endYear" : 2130,
+	"birthYears" : 40,
 	"maxAge" : 110,
 	"apcLimit" : 15,
 	"useCacheUncert" : true,
@@ -27,6 +28,7 @@
 	],
 	"default" : {
 		"prevalence" : "base_population_aus",
+		"birth_table" : "base_births",
 		"lifetable_rates" : "base_lifetable",
 		"disease_params" : {
 			"type" : {
@@ -47,6 +49,18 @@
 						}
 					},
 					"disability" : {
+						"diseaseRrDir" : "mould/disease_params",
+						"diseaseNames" : {
+							"copd" : true
+						}
+					},
+					"income" : {
+						"diseaseRrDir" : "mould/disease_params",
+						"diseaseNames" : {
+							"copd" : true
+						}
+					},
+					"exppenditure" : {
 						"diseaseRrDir" : "mould/disease_params",
 						"diseaseNames" : {
 							"copd" : true
@@ -94,7 +108,7 @@
 					"outputDivide" : {
 						"HALY_pp" : "person_years"
 					},
-					"yearRanges" : [[0, 10], [0, 20]],
+					"yearRanges" : [[0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]],
 					"fullPrecision" : true,
 					"outputStackedFile" : true
 				}
@@ -110,7 +124,7 @@
 						"proportion" : true
 					},
 					"discounts" : [0, -0.03],
-					"yearRanges" : [[0, 10], [0, 20]],
+					"yearRanges" : [[0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]],
 					"strataBreakdown" : "all",
 					"fullPrecision" : true,
 					"outputStackedFile" : true
@@ -130,7 +144,7 @@
 					"total_income" : 1000000
 				},
 				"strataRename" : {},
-				"yearRanges" : [[0, 20], [0, 100]],
+				"yearRanges" : [[0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]],
 				"fullPrecision" : true
 			}
 		},
@@ -169,7 +183,7 @@
 					"divide_by" : "person_years",
  					"processStrata" : {"strata" : ["SES5", "SES1"]},
 					"postProcessType" : "diffProp",
-					"out_yearRanges" : [[0, 110], [0, 10], [0, 20]]
+					"out_yearRanges" : [[0, 110], [0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]]
 				}
 			]
 		}
