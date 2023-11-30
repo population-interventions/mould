@@ -5,6 +5,7 @@
 	"hpc_drawZeroFirst" : true,
 	"startYear" : 2021,
 	"endYear" : 2130,
+	"birthYears" : 40,
 	"maxAge" : 110,
 	"apcLimit" : 15,
 	"hpc_memPerCpu" : 30000,
@@ -28,6 +29,7 @@
 	],
 	"default" : {
 		"prevalence" : "base_population_aus",
+		"birth_table" : "base_births",
 		"lifetable_rates" : "base_lifetable",
 		"disease_params" : {
 			"type" : {
