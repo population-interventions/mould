@@ -8,8 +8,6 @@
 	"birthYears" : 40,
 	"maxAge" : 110,
 	"apcLimit" : 15,
-	"hpc_memPerCpu" : 30000,
-	"hpc_time" : "01:40:00",
 	"useCacheUncert" : true,
 	"covarianceMatrix" : "covariance_matrix",
 	"diseaseParams" : {
@@ -71,265 +69,7 @@
 					]
 				}
 			}
-		},
-		
-		
-		
-		"mildMould_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {
-			"prevalence" : {"file" : "mould/prevalence", "percentile" : {"mild" : 0.025}}
-		}}},
-		"mildMould_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "mildMould_025_bau",
-			"circuit" : {"mould" : {
-				"prevalence" : {"file" : "mould/prevalence", "percentile" : {"mild" : 0.025}}
-		}}},
-		
-		"mildMould_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {
-			"prevalence" : {"file" : "mould/prevalence", "percentile" : {"mild" : 0.975}}
-		}}},
-		"mildMould_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "mildMould_975_bau",
-			"circuit" : {"mould" : {
-				"prevalence" : {"file" : "mould/prevalence", "percentile" : {"mild" : 0.975}}
-		}}},
-		
-		"severeMould_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {
-			"prevalence" : {"file" : "mould/prevalence", "percentile" : {"severe" : 0.025}}
-		}}},
-		"severeMould_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "severeMould_025_bau",
-			"circuit" : {"mould" : {
-				"prevalence" : {"file" : "mould/prevalence", "percentile" : {"severe" : 0.025}}
-		}}},
-		
-		"severeMould_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {
-			"prevalence" : {"file" : "mould/prevalence", "percentile" : {"severe" : 0.975}}
-		}}},
-		"severeMould_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "severeMould_975_bau",
-			"circuit" : {"mould" : {
-				"prevalence" : {"file" : "mould/prevalence", "percentile" : {"severe" : 0.975}}
-		}}},
-		
-		"bothMould_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {
-			"prevalence" : {"file" : "mould/prevalence", "percentile" : {"mild" : 0.025, "severe" : 0.025}}
-		}}},
-		"bothMould_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "bothMould_025_bau",
-			"circuit" : {"mould" : {
-				"prevalence" : {"file" : "mould/prevalence", "percentile" : {"mild" : 0.025, "severe" : 0.025}}
-		}}},
-		
-		"bothMould_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {
-			"prevalence" : {"file" : "mould/prevalence", "percentile" : {"mild" : 0.975, "severe" : 0.975}}
-		}}},
-		"bothMould_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "bothMould_975_bau",
-			"circuit" : {"mould" : {
-				"prevalence" : {"file" : "mould/prevalence", "percentile" : {"mild" : 0.975, "severe" : 0.975}}
-		}}},
-		
-		
-		
-		
-		
-		"asthmaBoth_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"mild" : 0.025, "severe" : 0.025}}
-		}}}}}},
-		"asthmaBoth_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "asthmaBoth_025_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"mild" : 0.025, "severe" : 0.025}}
-		}}}}}},
-		
-		"asthmaBoth_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"mild" : 0.975, "severe" : 0.975}}
-		}}}}}},
-		"asthmaBoth_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "asthmaBoth_975_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"mild" : 0.975, "severe" : 0.975}}
-		}}}}}},
-		
-		"asthmaMild_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"mild" : 0.025}}
-		}}}}}},
-		"asthmaMild_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "asthmaMild_025_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"mild" : 0.025}}
-		}}}}}},
-		
-		"asthmaMild_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"mild" : 0.975}}
-		}}}}}},
-		"asthmaMild_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "asthmaMild_975_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"mild" : 0.975}}
-		}}}}}},
-		
-		"asthmaSevere_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"severe" : 0.025}}
-		}}}}}},
-		"asthmaSevere_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "asthmaSevere_025_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"severe" : 0.025}}
-		}}}}}},
-		
-		"asthmaSevere_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"severe" : 0.975}}
-		}}}}}},
-		"asthmaSevere_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "asthmaSevere_975_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"asthma" : {"file" : "mould/disease_params/asthma_rr", "percentile" : {"severe" : 0.975}}
-		}}}}}},
-		
-		
-		
-		
-		
-		
-		"copdBoth_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"mild" : 0.025, "severe" : 0.025}}
-		}}}}}},
-		"copdBoth_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "copdBoth_025_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"mild" : 0.025, "severe" : 0.025}}
-		}}}}}},
-		
-		"copdBoth_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"mild" : 0.975, "severe" : 0.975}}
-		}}}}}},
-		"copdBoth_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "copdBoth_975_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"mild" : 0.975, "severe" : 0.975}}
-		}}}}}},
-		
-		"copdMild_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"mild" : 0.025}}
-		}}}}}},
-		"copdMild_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "copdMild_025_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"mild" : 0.025}}
-		}}}}}},
-		
-		"copdMild_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"mild" : 0.975}}
-		}}}}}},
-		"copdMild_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "copdMild_975_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"mild" : 0.975}}
-		}}}}}},
-		
-		"copdSevere_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"severe" : 0.025}}
-		}}}}}},
-		"copdSevere_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "copdSevere_025_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"severe" : 0.025}}
-		}}}}}},
-		
-		"copdSevere_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"severe" : 0.975}}
-		}}}}}},
-		"copdSevere_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "copdSevere_975_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"disability" : {"diseaseRrFile" : {
-				"copd" : {"file" : "mould/disease_params/copd_rr", "percentile" : {"severe" : 0.975}}
-		}}}}}},
-		
-		
-		
-		
-		
-		"lrtiBoth_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"mild" : 0.025, "severe" : 0.025}}
-		}}}}}},
-		"lrtiBoth_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "lrtiBoth_025_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"mild" : 0.025, "severe" : 0.025}}
-		}}}}}},
-		
-		"lrtiBoth_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"mild" : 0.975, "severe" : 0.975}}
-		}}}}}},
-		"lrtiBoth_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "lrtiBoth_975_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"mild" : 0.975, "severe" : 0.975}}
-		}}}}}},
-		
-		"lrtiMild_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"mild" : 0.025}}
-		}}}}}},
-		"lrtiMild_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "lrtiMild_025_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"mild" : 0.025}}
-		}}}}}},
-		
-		"lrtiMild_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"mild" : 0.975}}
-		}}}}}},
-		"lrtiMild_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "lrtiMild_975_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"mild" : 0.975}}
-		}}}}}},
-		
-		"lrtiSevere_025_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"severe" : 0.025}}
-		}}}}}},
-		"lrtiSevere_025" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "lrtiSevere_025_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"severe" : 0.025}}
-		}}}}}},
-		
-		"lrtiSevere_975_bau" : {"isExtraBau" : true, "circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"severe" : 0.975}}
-		}}}}}},
-		"lrtiSevere_975" : {
-			"alternateDefault" : "int",
-			"associatedBau" : "lrtiSevere_975_bau",
-			"circuit" : {"mould" : {"diseaseEffects" : {"incidence" : {"diseaseRrFile" : {
-				"lrti" : {"file" : "mould/disease_params/lrti_rr", "percentile" : {"severe" : 0.975}}
-		}}}}}}
-		
-		
-		
+		}
 	},
 	"output" : {
 		"pretty" : {
@@ -356,7 +96,7 @@
 					"outputDivide" : {
 						"HALY_pp" : "person_years"
 					},
-					"yearRanges" : [[0, 10], [0, 20]],
+					"yearRanges" : [[0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]],
 					"fullPrecision" : true,
 					"outputStackedFile" : true
 				}
@@ -372,7 +112,7 @@
 						"proportion" : true
 					},
 					"discounts" : [0, -0.03],
-					"yearRanges" : [[0, 10], [0, 20]],
+					"yearRanges" : [[0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]],
 					"strataBreakdown" : "all",
 					"fullPrecision" : true,
 					"outputStackedFile" : true
@@ -392,7 +132,7 @@
 					"total_income" : 1000000
 				},
 				"strataRename" : {},
-				"yearRanges" : [[0, 20], [0, 100]],
+				"yearRanges" : [[0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]],
 				"fullPrecision" : true
 			}
 		},
@@ -431,7 +171,7 @@
 					"divide_by" : "person_years",
  					"processStrata" : {"strata" : ["SES5", "SES1"]},
 					"postProcessType" : "diffProp",
-					"out_yearRanges" : [[0, 110], [0, 10], [0, 20]]
+					"out_yearRanges" : [[0, 110], [0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]]
 				}
 			]
 		}
