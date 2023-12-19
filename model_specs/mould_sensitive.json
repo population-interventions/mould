@@ -415,11 +415,12 @@
 					"standardiseBy" : "age",
 					"age_start" : 45,
  					"processStrata" : {"strata" : ["SES5", "SES1"]},
-					"postProcessType" : "ratio",
+					"postProcessType" : "all",
 					"out_fullYears" : true
 				},
 				{
 					"target" : "HALY",
+					"name" : "HALY_closed",
 					"preCompareProcess" : {
 						"multiplier" : 1000,
 						"divideByLifetable" : "prev_population",
@@ -428,10 +429,43 @@
 					"external_weights" : "who_standard",
 					"aggOtherStrata" : true,
 					"standardiseBy" : "year_of_birth",
+					"age_start" : 0,
+					"divide_by" : {
+						"type" : "lifetable",
+						"sourceScenario" : "bau",
+						"metric" : "person_years"
+					},
+ 					"processStrata" : {"strata" : ["SES5", "SES1"]},
+					"postProcessType" : "all",
+					"out_yearRanges" : [[0, 110], [0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]]
+				},
+				{
+					"target" : "HALY",
+					"name" : "HALY",
+					"external_weights" : "who_standard",
+					"aggOtherStrata" : true,
+					"standardiseBy" : "age",
+					"age_start" : 0,
+					"divide_by" : {
+						"type" : "lifetable",
+						"sourceScenario" : "bau",
+						"metric" : "person_years"
+					},
+ 					"processStrata" : {"strata" : ["SES5", "SES1"]},
+					"postProcessType" : "all",
+					"out_yearRanges" : [[0, 110], [0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]]
+				},
+				{
+					"target" : "HALY",
+					"name" : "HALY_old",
+					"external_weights" : "who_standard",
+					"aggOtherStrata" : true,
+					"standardiseBy" : "age",
+					"age_start" : 0,
 					"divide_by" : "person_years",
  					"processStrata" : {"strata" : ["SES5", "SES1"]},
-					"postProcessType" : "diffProp",
-					"out_yearRanges" : [[0, 110], [0, 10], [0, 20]]
+					"postProcessType" : "all",
+					"out_yearRanges" : [[0, 110], [0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]]
 				}
 			]
 		}
