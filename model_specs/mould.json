@@ -30,7 +30,7 @@
 		"prevalence" : "base_population_aus",
 		"birth_table" : "base_births",
 		"lifetable_rates" : "base_lifetable",
-		"disease_params" : {
+		"diseases" : {
 			"type" : {
 				"asthma" : "chronic",
 				"copd" : "chronic",
@@ -176,11 +176,6 @@
 				{
 					"target" : "HALY",
 					"name" : "HALY_closed",
-					"preCompareProcess" : {
-						"multiplier" : 1000,
-						"divideByLifetable" : "prev_population",
-						"divideOnYear" : 2021
-					},
 					"external_weights" : "who_standard",
 					"aggOtherStrata" : true,
 					"standardiseBy" : "year_of_birth",

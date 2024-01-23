@@ -21,7 +21,7 @@
 	"default" : {
 		"lifetable_rates" : "base_lifetable",
 		"birth_table" : "base_births",
-		"disease_params" : {
+		"diseases" : {
 			"type" : {
 				"asthma" : "chronic",
 				"copd" : "chronic",

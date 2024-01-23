@@ -28,7 +28,7 @@
 	"default" : {
 		"prevalence" : "base_population_aus",
 		"lifetable_rates" : "base_lifetable",
-		"disease_params" : {
+		"diseases" : {
 			"type" : {
 				"asthma" : "chronic",
 				"copd" : "chronic",
