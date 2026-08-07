@@ -40,6 +40,8 @@
 		"circuit" : {
 			"mould" : {
 				"prevalence" : "mould/prevalence",
+				"setEachYear" : true,
+				"proportionFlow" : true,
 				"diseaseEffects" : {
 					"incidence" : {
 						"diseaseRrDir" : "mould/disease_params",
@@ -71,10 +73,21 @@
 		}
 	},
 	"scenarios" : {
-		"int" : {
+		"int_050" : {
 			"circuit" : {
 				"mould" : {
-					"flowFile" : "mould/flow",
+					"flowFile" : "mould/flow_050",
+					"arcs" : [
+						["mild", ["nomould"]],
+						["severe", ["nomould"]]
+					]
+				}
+			}
+		},
+		"int_100" : {
+			"circuit" : {
+				"mould" : {
+					"flowFile" : "mould/flow_100",
 					"arcs" : [
 						["mild", ["nomould"]],
 						["severe", ["nomould"]]
@@ -88,12 +101,7 @@
 			"lifetable" : {
 				"out" : {
 					"metrics" : {
-						"person_years" : "person_years",
-						"HALY" : "HALY",
-						"HALY_pp" : "HALY",
-						"total_spent" : "total_spent",
-						"total_income" : "total_income",
-						"deaths" : "deaths"
+						"HALY" : "HALY"
 					},
 					"discounts" : [0, -0.03],
 					"divisor" : {
@@ -105,11 +113,7 @@
 						"bau" : "BAU",
 						"int" : "INT"
 					},
-					"outputDivide" : {
-						"HALY_pp" : "person_years"
-					},
-					"yearRanges" : [[0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]],
-					"ageRanges" : [[1, 110]],
+					"yearRanges" : [[0, 1], [1, 2]],
 					"fullPrecision" : true,
 					"outputStackedFile" : true
 				}
@@ -124,100 +128,12 @@
 					"normaliseRows" : {
 						"proportion" : true
 					},
-					"discounts" : [0, -0.03],
-					"yearRanges" : [[0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]],
-					"ageRanges" : [[1, 110]],
+					"yearRanges" : [[0, 1], [1, 2]],
 					"strataBreakdown" : "all",
 					"fullPrecision" : true,
 					"outputStackedFile" : true
 				}
-			},
-			"blame" : {
-				"metrics" : [
-					"HALY",
-					"deaths",
-					"direct_deaths",
-					"total_spent",
-					"total_income"
-				],
-				"discounts" : [0, -0.03],
-				"divisor" : {
-					"total_spent" : 1000000,
-					"total_income" : 1000000
-				},
-				"strataRename" : {},
-				"yearRanges" : [[0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]],
-				"ageRanges" : [[1, 110]],
-				"fullPrecision" : true
 			}
-		},
-		"ageStandard" : {
-			"crossDefaults" : [
-				{
-					"discount" : 0
-				},
-				{
-					"discount" : -0.03
-				}
-			],
-			"categories" : [
-				{
-					"target" : "acmr",
-					"external_weights" : "who_standard",
-					"year_start" : 2021,
-					"year_end" : 2061,
-					"aggOtherStrata" : false,
-					"standardiseBy" : "age",
-					"age_start" : 45,
- 					"processStrata" : {"strata" : ["SES5", "SES1"]},
-					"postProcessType" : "all",
-					"out_fullYears" : true
-				},
-				{
-					"target" : "HALY",
-					"name" : "HALY_closed",
-					"external_weights" : "who_standard",
-					"aggOtherStrata" : true,
-					"standardiseBy" : "year_of_birth",
-					"age_start" : 0,
-					"divide_by" : {
-						"type" : "lifetable",
-						"sourceScenario" : "bau",
-						"metric" : "person_years"
-					},
- 					"processStrata" : {"strata" : ["SES5", "SES1"]},
-					"postProcessType" : "all",
-					"out_yearRanges" : [[0, 110], [0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]]
-				},
-				{
-					"target" : "HALY",
-					"name" : "HALY",
-					"external_weights" : "who_standard",
-					"aggOtherStrata" : true,
-					"standardiseBy" : "age",
-					"age_start" : 0,
-					"divide_by" : {
-						"type" : "lifetable",
-						"sourceScenario" : "bau",
-						"metric" : "person_years"
-					},
- 					"processStrata" : {"strata" : ["SES5", "SES1"]},
-					"postProcessType" : "all",
-					"out_yearRanges" : [[0, 110], [0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]]
-				},
-				{
-					"target" : "HALY",
-					"name" : "HALY_old",
-					"external_weights" : "who_standard",
-					"aggOtherStrata" : true,
-					"standardiseBy" : "age",
-					"age_start" : 0,
-					"divide_by" : "person_years",
- 					"processStrata" : {"strata" : ["SES5", "SES1"]},
-					"postProcessType" : "all",
-					"out_yearRanges" : [[0, 110], [0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]]
-				}
-			]
 		}
 	}
 }
