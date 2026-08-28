@@ -139,7 +139,11 @@
 						"HALY_pp" : "HALY",
 						"total_spent" : "total_spent",
 						"total_income" : "total_income",
-						"deaths" : "deaths"
+						"deaths" : "deaths",
+						"TimeTravelLE" : "TimeTravelLE",
+						"TimeTravelHALE" : "TimeTravelHALE",
+						"LE" : "LE",
+						"HALE" : "HALE"
 					},
 					"discounts" : [0, -0.03],
 					"divisor" : {
