@@ -139,11 +139,7 @@
 						"HALY_pp" : "HALY",
 						"total_spent" : "total_spent",
 						"total_income" : "total_income",
-						"deaths" : "deaths",
-						"TimeTravelLE" : "TimeTravelLE",
-						"TimeTravelHALE" : "TimeTravelHALE",
-						"LE" : "LE",
-						"HALE" : "HALE"
+						"deaths" : "deaths"
 					},
 					"discounts" : [0, -0.03],
 					"divisor" : {
@@ -159,6 +155,29 @@
 						"HALY_pp" : "person_years"
 					},
 					"yearRanges" : [[0, 10], [0, 20], [0, 40], [10, 20], [20, 40], [10, 40]],
+					"ageRanges" : [[1, 110]],
+					"fullPrecision" : true,
+					"outputStackedFile" : true
+				},
+				"expect" : {
+					"metrics" : {
+						"TimeTravelLE" : "TimeTravelLE",
+						"TimeTravelHALE" : "TimeTravelHALE",
+						"LE" : "LE",
+						"HALE" : "HALE"
+					},
+					"discounts" : [0, -0.03],
+					"colRename" : {
+						"bau" : "BAU",
+						"int" : "INT"
+					},
+					"weightedAverage" : {
+						"TimeTravelLE" : "person_years",
+						"TimeTravelHALE" : "person_years",
+						"LE" : "person_years",
+						"HALE" : "person_years"
+					},
+					"yearRanges" : [[0, 1], [10, 11], [20, 21], [40, 41]],
 					"ageRanges" : [[1, 110]],
 					"fullPrecision" : true,
 					"outputStackedFile" : true
