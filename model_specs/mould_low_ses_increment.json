@@ -27,7 +27,7 @@
 		"mould"
 	],
 	"default" : {
-		"prevalence" : "base_population_aus",
+		"prevalence" : "base_population",
 		"birth_table" : "base_births",
 		"lifetable_rates" : "base_lifetable",
 		"diseases" : {
