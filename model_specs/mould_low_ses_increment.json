@@ -178,7 +178,7 @@
 						"HALE" : "person_years"
 					},
 					"yearRanges" : [[0, 1], [10, 11], [20, 21], [40, 41]],
-					"ageRanges" : [[1, 110]],
+					"ageRanges" : [[0, 1]],
 					"fullPrecision" : true,
 					"outputStackedFile" : true
 				}
